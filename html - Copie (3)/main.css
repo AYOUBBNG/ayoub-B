@@ -1,0 +1,178 @@
+header {
+    background-color: rgb(226, 245, 245);
+    width: 100%;
+    position: fixed;
+    z-index: 999;
+    display: flex;
+    justify-content:space-between ;
+    align-items: center;
+    padding: 10px;
+   }
+   
+   .logo {
+   text-decoration: none ;
+   color: brown;
+   text-transform: uppercase;
+   font-weight: 800;
+   font-size: xx-large;
+   }
+   
+   .navigation a{
+       color: brown;
+       text-decoration: none;
+       font-size: 1.1em;
+       font-weight: 500 ;
+       padding: 5px;
+   }
+   
+   .navigation a:hover{
+      color: black;
+   
+   }
+   
+   section {
+       padding: 100PX 200PX;
+   }
+   
+   .main {
+   
+       width: 700;
+       min-height: 10vh ;
+       display: flex;
+       align-items: center;
+       background: url(image/photo\ projer.jpg)  no-repeat;
+       background-size:cover;
+       background-position: center ;
+       background-attachment: fixed;
+   }
+   
+   
+   .main h2 {
+       color: rgb(4, 116, 32);
+       font-size: 1.4em;
+       font-weight: 900PX;
+   }
+   
+   .main h2 span {
+       display: inline-block;
+       margin-top: 10px;
+       color: #4e9eff;
+       font-size: 3em;
+       font-weight: 400;
+   }
+
+   .main h2 span {
+    display: inline-block;
+    margin-top: 10px;
+    color: #4e9eff;
+    font-size: 1em;
+    font-weight: 400;
+}
+
+.main h3 {
+    color: rgb(138, 13, 13);
+    font-size: 2em;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+.main-btn {
+    color: #fff;
+    background-color: #723af4;
+    text-decoration: none;
+    font-size: 1.1em;
+    font-weight: 600;
+    display: inline-block;
+    padding: 0.9375em 2.1875em;
+    letter-spacing: 1px;
+    border-radius: 15px;
+    margin-bottom: 40px;
+    transition: 0.7s ease;
+}
+
+.main-btn:hover {
+    background-color: #0a49f6;
+    transform: scale(1.1);
+}
+
+
+.title{
+    display: flex;
+    justify-content: center;
+    color: #0a49f6;
+    font-size: 2.2em;
+    font-weight: 800;
+    margin-bottom: 30PX;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.card {
+    background-color: rgb(247, 248, 172);
+    width: 21.25em;
+    box-shadow: 0 5px 25px rgba(1 1 1 / 80%);
+    border-radius: 10px;
+    padding: 30px;
+    margin: 15px;
+    transition: 0.7s ease;
+}
+
+@media (max-width:1023px){
+    header{
+        padding: 12px 20px;
+    }
+
+    .navigation a{
+        padding-left: 10px;
+    }
+
+    .title{
+        font-size: 1.8em;
+    }
+
+    section{
+        padding: 80px 20px;
+    }
+
+    .main-content h2{
+        font-size: 1em;
+    }
+
+    .main-content h3{
+        font-size: 1.6em;
+    }
+
+    .content{
+        flex-direction: column;
+        align-items: center;
+    }
+
+}
+
+@media (max-width:641px){
+    body{
+        font-size: 12px;
+    }
+
+    .main-content h2{
+        font-size: 0.8em;
+    }
+
+    .main-content h3{
+        font-size: 1.4em;
+    }
+}
+
+@media (max-width:300px){
+    body{
+        font-size: 10px;
+     
+    }
+}
